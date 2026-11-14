@@ -5,123 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="PixelByAwais - Pixelora Studio. Creative websites, UI/UX designs and graphic design solutions.">
+    <meta name="description" content="PixelByAwais - Pixelora Studio. Website development, UI/UX design and graphic design.">
 
     <title>PixelByAwais | Pixelora Studio</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVIGATION -->
     <header class="header">
+        <nav class="nav container">
 
-        <nav class="navbar container">
-
-            <a href="#home" class="logo">
-                <span class="logo-icon">P.</span>
-
-                <span class="logo-text">
-                    PixelByAwais
-                    <small>PIXELORA STUDIO</small>
+            <a href="#home" class="brand">
+                <span class="logo">P<span>.</span></span>
+                <span>
+                    PIXELORA
+                    <small>STUDIO</small>
                 </span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
             </button>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="nav-button">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact" class="nav-contact">Let's Talk ↗</a>
+            </div>
 
         </nav>
-
     </header>
 
 
-    <!-- HERO SECTION -->
-    <section class="hero section" id="home">
+    <main>
 
-        <div class="container hero-container">
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
 
-            <div class="hero-content">
+            <div class="hero-content reveal">
 
-                <div class="eyebrow">
-                    <span class="status-dot"></span>
-                    WELCOME TO PIXELORA STUDIO
-                </div>
+                <p class="eyebrow">✦ CREATIVE DIGITAL STUDIO</p>
 
                 <h1>
-                    We Create
-                    <span class="gradient-text">Digital</span>
-                    Experiences.
+                    We create
+                    <span>digital experiences</span>
+                    that make brands stand out.
                 </h1>
 
-                <p>
-                    I'm Awais, founder of Pixelora Studio.
-                    We design modern websites, intuitive UI/UX
-                    experiences and creative graphics that help
-                    businesses build a powerful digital presence.
+                <p class="hero-description">
+                    I'm Awais, the creator behind Pixelora Studio.
+                    I build modern websites, thoughtful UI/UX experiences
+                    and eye-catching graphics for businesses ready to grow.
                 </p>
 
                 <div class="hero-buttons">
-
                     <a href="#portfolio" class="btn btn-primary">
-                        Explore My Work
-                        <i class="fa-solid fa-arrow-right"></i>
+                        Explore My Work ↗
                     </a>
 
-                    <a href="#contact" class="btn btn-secondary">
-                        Let's Collaborate
+                    <a href="https://www.fiverr.com/ranaawais14"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-outline">
+                        Hire Me on Fiverr ↗
                     </a>
-
                 </div>
 
-                <div class="hero-services">
-                    <span>WEB DEVELOPMENT</span>
-                    <span>UI/UX DESIGN</span>
-                    <span>GRAPHIC DESIGN</span>
-                </div>
+                <p class="specialties">
+                    WEB DEVELOPMENT <span>·</span>
+                    UI/UX DESIGN <span>·</span>
+                    GRAPHIC DESIGN
+                </p>
 
             </div>
 
 
-            <div class="hero-visual">
+            <div class="hero-visual reveal">
 
-                <div class="visual-circle circle-one"></div>
-                <div class="visual-circle circle-two"></div>
+                <div class="orbit"></div>
 
-                <div class="hero-logo">
-                    <span>P.</span>
-                    <small>PIXELORA<br>STUDIO</small>
+                <div class="design-window">
+
+                    <div class="window-header">
+                        <span>● ● ●</span>
+                        pixelora.studio
+                        <span>•••</span>
+                    </div>
+
+                    <div class="window-content">
+
+                        <small>DESIGN WITH PURPOSE</small>
+
+                        <h2>
+                            Ideas into
+                            <span>impact.</span>
+                        </h2>
+
+                        <div class="green-line"></div>
+
+                        <p>CREATIVE DEVELOPMENT <b>✳</b></p>
+
+                    </div>
+
                 </div>
 
-                <div class="floating-card card-top">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <div class="floating-card card-one">
+                    ✦
                     <div>
                         <strong>Creative Design</strong>
                         <small>Ideas into reality</small>
                     </div>
                 </div>
 
-                <div class="floating-card card-bottom">
-                    <i class="fa-solid fa-code"></i>
+                <div class="floating-card card-two">
+                    &lt;/&gt;
                     <div>
                         <strong>Digital Solutions</strong>
                         <small>Designed with purpose</small>
@@ -130,544 +137,493 @@
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ABOUT SECTION -->
-    <section class="about section" id="about">
+        <!-- ABOUT SECTION -->
+        <section class="section container" id="about">
 
-        <div class="container about-container">
+            <p class="eyebrow">A LITTLE ABOUT PIXELORA</p>
 
-            <div class="section-label">ABOUT PIXELORA</div>
+            <h2>
+                Turning Ideas Into
+                <span>Creative Reality.</span>
+            </h2>
 
-            <div class="about-content">
+            <div class="about-grid">
 
-                <div>
-                    <h2>
-                        Turning Ideas Into
-                        <span class="gradient-text">Creative Reality.</span>
-                    </h2>
-                </div>
+                <h3>
+                    Good design should look great
+                    and work even better.
+                </h3>
 
-                <div class="about-description">
-
+                <div class="description">
                     <p>
-                        Pixelora Studio is a creative digital brand
-                        founded by Awais. Our goal is to combine
-                        technology, creativity and design to create
-                        meaningful digital experiences.
+                        Pixelora Studio is my independent creative studio.
+                        I combine technology, creativity and design to
+                        create useful digital experiences.
                     </p>
 
                     <p>
-                        From responsive websites to modern user
-                        interfaces and attractive graphics, we focus
-                        on quality, simplicity and creativity.
+                        From responsive websites to modern user interfaces
+                        and attractive graphics, I focus on quality,
+                        simplicity and creativity.
                     </p>
 
                     <a href="#contact" class="text-link">
-                        Let's work together
-                        <i class="fa-solid fa-arrow-right"></i>
+                        Let's work together ↗
                     </a>
-
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- SERVICES SECTION -->
-    <section class="services section" id="services">
+        <!-- SERVICES SECTION -->
+        <section class="section dark-section" id="services">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="section-label">WHAT WE DO</div>
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT I CAN HELP WITH</p>
 
-            <div class="section-heading">
-
-                <h2>
-                    Our Creative
-                    <span class="muted">Services.</span>
-                </h2>
-
-                <p>
-                    Creative solutions designed to help your
-                    business stand out in the digital world.
-                </p>
-
-            </div>
-
-
-            <div class="services-grid">
-
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-
-                    <span class="service-number">01</span>
-
-                    <h3>Website Development</h3>
+                    <h2>
+                        Creative Skills.
+                        <span>Digital Solutions.</span>
+                    </h2>
 
                     <p>
-                        Modern, responsive and user-friendly
-                        websites built to give your business
-                        a strong online presence.
+                        Professional digital services to help your brand
+                        build a stronger online presence.
                     </p>
-
-                    <a href="#contact">
-                        Explore Service <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
                 </div>
 
 
-                <div class="service-card">
+                <div class="service-grid">
 
-                    <div class="service-icon">
-                        <i class="fa-solid fa-layer-group"></i>
-                    </div>
+                    <article class="service-card">
+                        <span class="service-number">01 / WEB</span>
 
-                    <span class="service-number">02</span>
+                        <div class="service-icon">&lt;/&gt;</div>
 
-                    <h3>UI/UX Design</h3>
+                        <h3>Website Development</h3>
 
-                    <p>
-                        Clean interfaces, wireframes and
-                        user experiences designed with
-                        simplicity and usability in mind.
-                    </p>
+                        <p>
+                            Modern and responsive websites designed
+                            to look professional on all devices.
+                        </p>
 
-                    <a href="#contact">
-                        Explore Service <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                        <ul>
+                            <li>Business Websites</li>
+                            <li>Portfolio Websites</li>
+                            <li>Landing Pages</li>
+                            <li>HTML, CSS & JavaScript</li>
+                        </ul>
+                    </article>
 
-                </div>
+
+                    <article class="service-card featured">
+                        <span class="service-number">02 / UI·UX</span>
+
+                        <div class="service-icon">◈</div>
+
+                        <h3>UI/UX Design</h3>
+
+                        <p>
+                            Clean and user-friendly interfaces
+                            that make digital products easier to use.
+                        </p>
+
+                        <ul>
+                            <li>Website UI Design</li>
+                            <li>Mobile App Concepts</li>
+                            <li>Wireframes</li>
+                            <li>Modern Layouts</li>
+                        </ul>
+                    </article>
 
 
-                <div class="service-card">
+                    <article class="service-card">
+                        <span class="service-number">03 / GRAPHICS</span>
 
-                    <div class="service-icon">
-                        <i class="fa-solid fa-pen-nib"></i>
-                    </div>
+                        <div class="service-icon">✳</div>
 
-                    <span class="service-number">03</span>
+                        <h3>Graphic Design</h3>
 
-                    <h3>Graphic Design</h3>
+                        <p>
+                            Attractive visual content that helps
+                            brands communicate with confidence.
+                        </p>
 
-                    <p>
-                        Creative social media posts, branding,
-                        posters and visual designs that
-                        communicate your brand identity.
-                    </p>
-
-                    <a href="#contact">
-                        Explore Service <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                        <ul>
+                            <li>Social Media Posts</li>
+                            <li>Promotional Designs</li>
+                            <li>Brand Visuals</li>
+                            <li>Creative Graphics</li>
+                        </ul>
+                    </article>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="portfolio section" id="portfolio">
+        <!-- PORTFOLIO SECTION -->
+        <section class="section container" id="portfolio">
 
-        <div class="container">
+            <div class="portfolio-heading">
 
-            <div class="section-label">SELECTED WORK</div>
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
 
-            <div class="section-heading">
+                    <h2>
+                        Ideas Made
+                        <span>Visible.</span>
+                    </h2>
 
-                <h2>
-                    My Creative
-                    <span class="muted">Portfolio.</span>
-                </h2>
+                    <p class="portfolio-description">
+                        Explore website, UI/UX and graphic design concepts.
+                    </p>
+                </div>
 
-                <p>
-                    A collection of website projects,
-                    interface designs and graphic creations.
-                </p>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
 
-            </div>
+                    <button class="filter-btn" data-filter="web">
+                        Websites
+                    </button>
 
+                    <button class="filter-btn" data-filter="uiux">
+                        UI/UX
+                    </button>
 
-            <!-- FILTER BUTTONS -->
-            <div class="portfolio-filters">
-
-                <button class="filter-btn active" data-filter="all">
-                    All Projects
-                </button>
-
-                <button class="filter-btn" data-filter="website">
-                    Websites
-                </button>
-
-                <button class="filter-btn" data-filter="uiux">
-                    UI/UX Designs
-                </button>
-
-                <button class="filter-btn" data-filter="graphic">
-                    Graphic Designs
-                </button>
+                    <button class="filter-btn" data-filter="graphic">
+                        Graphics
+                    </button>
+                </div>
 
             </div>
 
 
-            <!-- PROJECTS -->
             <div class="portfolio-grid">
 
+                <!-- WEBSITE PROJECT 1 -->
+                <article class="project" data-category="web">
 
-                <!-- WEBSITE PROJECT -->
-                <div class="portfolio-item" data-category="website">
+                    <a href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+                       target="_blank">
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                            alt="Business website dashboard"
+                            loading="lazy">
+                    </a>
 
-                    <div class="portfolio-image website-image">
-                        <div class="website-preview">
-                            <div class="preview-header">
-                                PIXELORA
-                                <span>HOME &nbsp; ABOUT &nbsp; CONTACT</span>
-                            </div>
+                    <small>WEBSITE DESIGN · 01</small>
 
-                            <div class="preview-content">
-                                <small>CREATIVE DIGITAL STUDIO</small>
-                                <h3>Build Your<br>Digital Future.</h3>
-                                <button>Explore More</button>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Nova Business Website</h3>
 
-                    <div class="portfolio-info">
-                        <div>
-                            <h3>Creative Business Website</h3>
-                            <p>Website Development</p>
-                        </div>
+                    <p>
+                        A modern business website concept with a clean
+                        layout and clear service presentation.
+                    </p>
 
-                        <span class="project-arrow">↗</span>
-                    </div>
+                    <span class="project-tag">Personal Concept Project</span>
 
-                </div>
+                </article>
 
 
-                <!-- UI UX PROJECT -->
-                <div class="portfolio-item" data-category="uiux">
+                <!-- WEBSITE PROJECT 2 -->
+                <article class="project" data-category="web">
 
-                    <div class="portfolio-image uiux-image">
+                    <a href="https://images.unsplash.com/photo-1547656399-3bc7f9f2c3b2?auto=format&fit=crop&w=1200&q=85"
+                       target="_blank">
+                        <img
+                            src="https://images.unsplash.com/photo-1547656399-3bc7f9f2c3b2?auto=format&fit=crop&w=900&q=80"
+                            alt="Website design displayed on a screen"
+                            loading="lazy">
+                    </a>
 
-                        <div class="phone-preview">
+                    <small>WEBSITE DESIGN · 02</small>
 
-                            <div class="phone-top">9:41</div>
+                    <h3>Form & Function Store</h3>
 
-                            <small>WELCOME BACK</small>
+                    <p>
+                        An e-commerce website concept with a simple
+                        and product-focused visual direction.
+                    </p>
 
-                            <h3>Your Dashboard</h3>
+                    <span class="project-tag">Personal Concept Project</span>
 
-                            <div class="dashboard-box">
-                                <small>TOTAL BALANCE</small>
-                                <h2>$12,840</h2>
-                            </div>
-
-                            <div class="dashboard-row">
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <div class="dashboard-chart"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="portfolio-info">
-                        <div>
-                            <h3>Finance App Interface</h3>
-                            <p>UI/UX Design</p>
-                        </div>
-
-                        <span class="project-arrow">↗</span>
-                    </div>
-
-                </div>
-
-
-                <!-- GRAPHIC PROJECT -->
-                <div class="portfolio-item" data-category="graphic">
-
-                    <div class="portfolio-image graphic-image">
-
-                        <div class="graphic-poster">
-                            <small>PIXELORA STUDIO PRESENTS</small>
-                            <h3>MAKE IT<br><span>CREATIVE.</span></h3>
-                            <div class="poster-circle"></div>
-                            <small>DESIGN THAT MAKES A DIFFERENCE</small>
-                        </div>
-
-                    </div>
-
-                    <div class="portfolio-info">
-                        <div>
-                            <h3>Creative Poster Design</h3>
-                            <p>Graphic Design</p>
-                        </div>
-
-                        <span class="project-arrow">↗</span>
-                    </div>
-
-                </div>
-
-
-                <!-- WEBSITE PROJECT -->
-                <div class="portfolio-item" data-category="website">
-
-                    <div class="portfolio-image ecommerce-image">
-
-                        <div class="ecommerce-preview">
-                            <h3>ATELIER.</h3>
-                            <p>DESIGNED FOR EVERYDAY LIVING.</p>
-
-                            <div class="product-shapes">
-                                <span>◒</span>
-                                <span>◯</span>
-                                <span>▱</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="portfolio-info">
-                        <div>
-                            <h3>E-commerce Website</h3>
-                            <p>Website Development</p>
-                        </div>
-
-                        <span class="project-arrow">↗</span>
-                    </div>
-
-                </div>
+                </article>
 
 
                 <!-- UI UX PROJECT -->
-                <div class="portfolio-item" data-category="uiux">
+                <article class="project" data-category="uiux">
 
-                    <div class="portfolio-image dashboard-image">
+                    <a href="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=85"
+                       target="_blank">
+                        <img
+                            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=80"
+                            alt="Mobile application interface concept"
+                            loading="lazy">
+                    </a>
 
-                        <div class="analytics-preview">
-                            <small>ANALYTICS DASHBOARD</small>
-                            <h3>Project Overview</h3>
+                    <small>UI/UX DESIGN · 03</small>
 
-                            <div class="analytics-widgets">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
+                    <h3>Flow Mobile App</h3>
 
-                            <div class="analytics-bars">
-                                <i></i><i></i><i></i><i></i><i></i>
-                                <i></i><i></i><i></i><i></i>
-                            </div>
-                        </div>
+                    <p>
+                        A mobile application interface concept
+                        focused on usability and easy navigation.
+                    </p>
 
-                    </div>
+                    <span class="project-tag">Personal Concept Project</span>
 
-                    <div class="portfolio-info">
-                        <div>
-                            <h3>Analytics Dashboard</h3>
-                            <p>UI/UX Design</p>
-                        </div>
-
-                        <span class="project-arrow">↗</span>
-                    </div>
-
-                </div>
+                </article>
 
 
-                <!-- GRAPHIC PROJECT -->
-                <div class="portfolio-item" data-category="graphic">
+                <!-- GRAPHIC DESIGN PROJECT 1 -->
+                <article class="project" data-category="graphic">
 
-                    <div class="portfolio-image social-image">
+                    <a href="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=85"
+                       target="_blank">
+                        <img
+                            src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=900&q=80"
+                            alt="Abstract colorful graphic artwork"
+                            loading="lazy">
+                    </a>
 
-                        <div class="social-preview">
-                            <small>PIXELORA SOCIAL SERIES</small>
-                            <h3>GOOD<br>DESIGN<br><span>STICKS.</span></h3>
-                            <div class="social-star">✳</div>
-                        </div>
+                    <small>GRAPHIC DESIGN · 04</small>
 
-                    </div>
+                    <h3>Color Theory Campaign</h3>
 
-                    <div class="portfolio-info">
-                        <div>
-                            <h3>Social Media Creative</h3>
-                            <p>Graphic Design</p>
-                        </div>
+                    <p>
+                        A colorful visual concept for a creative
+                        social media campaign.
+                    </p>
 
-                        <span class="project-arrow">↗</span>
-                    </div>
+                    <span class="project-tag">Personal Concept Project</span>
 
-                </div>
+                </article>
 
+
+                <!-- GRAPHIC DESIGN PROJECT 2 -->
+                <article class="project" data-category="graphic">
+
+                    <a href="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+                       target="_blank">
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                            alt="Landscape promotional visual"
+                            loading="lazy">
+                    </a>
+
+                    <small>GRAPHIC DESIGN · 05</small>
+
+                    <h3>Beyond Campaign Visual</h3>
+
+                    <p>
+                        A minimal promotional visual concept
+                        built around a strong image and message.
+                    </p>
+
+                    <span class="project-tag">Personal Concept Project</span>
+
+                </article>
+
+
+                <!-- CONTACT PROJECT CARD -->
+                <article class="project project-callout">
+
+                    <div class="callout-logo">P<span>.</span></div>
+
+                    <small>YOUR PROJECT COULD BE NEXT</small>
+
+                    <h3>Let's Create Something Great.</h3>
+
+                    <p>
+                        Have an idea? Let's discuss how I can
+                        help bring it to life.
+                    </p>
+
+                    <a href="https://www.fiverr.com/ranaawais14"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary">
+                        Start a Project ↗
+                    </a>
+
+                </article>
 
             </div>
 
             <p class="portfolio-note">
-                Note: These are sample portfolio concepts. Replace them
-                with your actual work before presenting them as completed
-                client projects.
+                Note: The displayed entries are concept examples for
+                presentation, not paid client projects. Replace them
+                with your actual completed work as you build your portfolio.
             </p>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- WHY CHOOSE US -->
-    <section class="why-us section">
+        <!-- WORK PROCESS -->
+        <section class="section dark-section">
 
-        <div class="container why-container">
+            <div class="container process-grid">
 
-            <div>
-                <div class="section-label">WHY PIXELORA</div>
+                <div>
+                    <p class="eyebrow">HOW I WORK</p>
+
+                    <h2>
+                        Simple Process.
+                        <span>Thoughtful Results.</span>
+                    </h2>
+
+                    <p class="process-description">
+                        Clear communication and a practical approach
+                        from the first idea to the final delivery.
+                    </p>
+                </div>
+
+
+                <div class="process-steps">
+
+                    <div>
+                        <b>01</b>
+                        <span>
+                            <strong>Understand</strong>
+                            <small>
+                                Discuss your goals and project requirements.
+                            </small>
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>02</b>
+                        <span>
+                            <strong>Plan & Create</strong>
+                            <small>
+                                Develop the design or website concept.
+                            </small>
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>03</b>
+                        <span>
+                            <strong>Refine</strong>
+                            <small>
+                                Review details and make improvements.
+                            </small>
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>04</b>
+                        <span>
+                            <strong>Deliver</strong>
+                            <small>
+                                Receive the completed project files.
+                            </small>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="section container" id="contact">
+
+            <div class="contact-box">
+
+                <p class="eyebrow">HAVE AN IDEA? LET'S TALK.</p>
 
                 <h2>
-                    More Than Just
-                    <span class="gradient-text">Good Design.</span>
+                    Let's Build Something
+                    <span>Great Together.</span>
                 </h2>
 
                 <p>
-                    We believe every pixel should have a purpose.
-                    Our approach combines creativity, functionality
-                    and attention to detail.
+                    Need a website, a fresh interface or creative graphics?
+                    Tell me what you're planning. I'd love to hear about
+                    your project.
                 </p>
-            </div>
 
-            <div class="features">
+                <div class="contact-buttons">
 
-                <div class="feature">
-                    <span>01</span>
-                    <div>
-                        <h3>Modern Creativity</h3>
-                        <p>Fresh and contemporary visual experiences.</p>
-                    </div>
+                    <a href="https://www.fiverr.com/ranaawais14"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary">
+                        Contact Me on Fiverr ↗
+                    </a>
+
+                    <a href="https://www.instagram.com/pixelbyawais_pixelora.studio/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-outline">
+                        Message on Instagram ↗
+                    </a>
+
                 </div>
 
-                <div class="feature">
-                    <span>02</span>
-                    <div>
-                        <h3>User Focused</h3>
-                        <p>Designs that are simple and easy to use.</p>
-                    </div>
+                <div class="social-links">
+
+                    <a href="https://www.instagram.com/pixelbyawais_pixelora.studio/"
+                       target="_blank"
+                       rel="noopener">
+                        Instagram ↗
+                    </a>
+
+                    <a href="https://www.fiverr.com/ranaawais14"
+                       target="_blank"
+                       rel="noopener">
+                        Fiverr ↗
+                    </a>
+
                 </div>
-
-                <div class="feature">
-                    <span>03</span>
-                    <div>
-                        <h3>Responsive Design</h3>
-                        <p>Experiences that adapt to different screens.</p>
-                    </div>
-                </div>
-
-                <div class="feature">
-                    <span>04</span>
-                    <div>
-                        <h3>Attention to Detail</h3>
-                        <p>Carefully considered details in every project.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT SECTION -->
-    <section class="contact section" id="contact">
-
-        <div class="container contact-container">
-
-            <div class="section-label">
-                HAVE A PROJECT IN MIND?
-            </div>
-
-            <h2>
-                Let's Create Something
-                <span class="gradient-text">Amazing.</span>
-            </h2>
-
-            <p>
-                Have an idea, a project or a business that needs
-                a creative digital presence? Let's talk.
-            </p>
-
-            <a href="mailto:YOUR_EMAIL@example.com"
-               class="btn btn-primary">
-                Contact Pixelora
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-            <div class="contact-socials">
-
-                <a href="https://instagram.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </a>
-
-                <a href="https://linkedin.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-linkedin"></i>
-                    LinkedIn
-                </a>
-
-                <a href="mailto:YOUR_EMAIL@example.com">
-                    <i class="fa-solid fa-envelope"></i>
-                    Email
-                </a>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
 
-        <div class="container footer-container">
+        <div class="container footer-content">
 
-            <a href="#home" class="logo">
-                <span class="logo-icon">P.</span>
-
-                <span class="logo-text">
-                    PixelByAwais
-                    <small>PIXELORA STUDIO</small>
+            <a href="#home" class="brand">
+                <span class="logo">P<span>.</span></span>
+                <span>
+                    PIXELORA
+                    <small>STUDIO</small>
                 </span>
             </a>
 
-            <p>
-                © <span id="currentYear"></span>
-                PixelByAwais. All Rights Reserved.
-            </p>
+            <p>Designed with curiosity. Built with purpose.</p>
 
-            <a href="#home" class="back-top">
-                Back to top ↑
-            </a>
+            <span>
+                © <b id="year"></b> PixelByAwais
+            </span>
 
         </div>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

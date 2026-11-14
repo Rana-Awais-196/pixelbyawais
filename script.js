@@ -1,95 +1,77 @@
 
-/* =====================================
-   PIXELBYAWAIS - PIXELORA STUDIO
-   JAVASCRIPT
-===================================== */
+// MOBILE NAVIGATION
 
-
-/* MOBILE NAVIGATION */
-
-const menuToggle = document.getElementById("menuToggle");
-
+const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
-menuToggle.addEventListener("click", function () {
+menuBtn.addEventListener("click", function () {
 
     navLinks.classList.toggle("open");
 
     const isOpen = navLinks.classList.contains("open");
 
-    menuToggle.setAttribute("aria-expanded", isOpen);
-
-    menuToggle.innerHTML = isOpen
-        ? '<i class="fa-solid fa-xmark"></i>'
-        : '<i class="fa-solid fa-bars"></i>';
+    menuBtn.setAttribute("aria-expanded", isOpen);
 
 });
 
 
-/* CLOSE MENU AFTER CLICKING A LINK */
+// CLOSE MOBILE MENU AFTER CLICKING A LINK
 
 const navItems = document.querySelectorAll(".nav-links a");
 
-navItems.forEach(function (item) {
+navItems.forEach(function (link) {
 
-    item.addEventListener("click", function () {
+    link.addEventListener("click", function () {
 
         navLinks.classList.remove("open");
 
-        menuToggle.setAttribute("aria-expanded", "false");
-
-        menuToggle.innerHTML =
-            '<i class="fa-solid fa-bars"></i>';
+        menuBtn.setAttribute("aria-expanded", "false");
 
     });
 
 });
 
 
-/* PORTFOLIO FILTER SYSTEM */
+// PORTFOLIO FILTER
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 
-const portfolioItems = document.querySelectorAll(".portfolio-item");
-
+const projects = document.querySelectorAll(".project[data-category]");
 
 filterButtons.forEach(function (button) {
 
     button.addEventListener("click", function () {
 
-        // Get selected category
-        const selectedCategory = button.getAttribute("data-filter");
-
-
         // Remove active class from all buttons
+
         filterButtons.forEach(function (btn) {
-
             btn.classList.remove("active");
-
         });
 
+        // Activate selected button
 
-        // Add active class to clicked button
         button.classList.add("active");
 
+        // Get selected category
 
-        // Filter portfolio projects
-        portfolioItems.forEach(function (item) {
+        const selectedCategory = button.dataset.filter;
 
-            const projectCategory =
-                item.getAttribute("data-category");
+        // Show or hide portfolio projects
 
+        projects.forEach(function (project) {
+
+            const projectCategory = project.dataset.category;
 
             if (
                 selectedCategory === "all" ||
-                selectedCategory === projectCategory
+                projectCategory === selectedCategory
             ) {
 
-                item.classList.remove("hide");
+                project.classList.remove("hidden");
 
             } else {
 
-                item.classList.add("hide");
+                project.classList.add("hidden");
 
             }
 
@@ -100,15 +82,55 @@ filterButtons.forEach(function (button) {
 });
 
 
-/* AUTOMATIC COPYRIGHT YEAR */
+// SCROLL ANIMATION
 
-const currentYear = document.getElementById("currentYear");
+const revealElements = document.querySelectorAll(".reveal");
 
-currentYear.textContent = new Date().getFullYear();
+if ("IntersectionObserver" in window) {
+
+    const observer = new IntersectionObserver(
+
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.12
+        }
+
+    );
+
+    revealElements.forEach(function (element) {
+
+        observer.observe(element);
+
+    });
+
+} else {
+
+    revealElements.forEach(function (element) {
+
+        element.classList.add("visible");
+
+    });
+
+}
 
 
-/* CONSOLE MESSAGE */
+// AUTOMATIC COPYRIGHT YEAR
 
-console.log(
-    "Welcome to PixelByAwais | Pixelora Studio!"
-);
+const yearElement = document.getElementById("year");
+
+yearElement.textContent = new Date().getFullYear();
